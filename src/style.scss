@@ -1,0 +1,58 @@
+/**
+ * Front and editor styles.
+ */
+
+.custom-query-block__item {
+  margin-bottom: 3rem;
+}
+
+.custom-query-block__image {
+  margin: 0 0 1rem;
+  a {
+    display: inline-block;
+  }
+}
+
+.custom-query-block__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.custom-query-block__terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-query-block__separate {
+  &:before {
+    content: "\007C";
+  }
+}
+
+.cq-is-grid {
+  display: grid;
+  column-gap: 1.25rem;
+} 
+
+@media (min-width: 600px) {
+  .cq-columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cq-columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cq-columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .cq-columns-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .cq-columns-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

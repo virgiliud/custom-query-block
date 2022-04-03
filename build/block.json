@@ -1,0 +1,106 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "cq/custom-query",
+	"version": "0.1.0",
+	"title": "Custom Query",
+	"category": "theme",
+	"icon": "list-view",
+	"description": "Use a custom query to display posts.",
+	"attributes": {
+		"headingLevel": {
+			"type": "number",
+			"default": 3
+		},
+    "selectedPostType": {
+			"type": "string",
+			"default": "post"
+		},
+		"displayExcerpt": {
+			"type": "boolean",
+			"default": false
+		},
+		"excerptLength": {
+			"type": "number",
+			"default": 55
+		},
+		"excerptTrail": {
+			"type": "string",
+			"default": "[...]"
+		},
+		"displayReadMoreLink": {
+			"type": "boolean",
+			"default": false
+		},
+		"readMoreText": {
+			"type": "string",
+			"default": "Read More"
+		},
+		"displayFeaturedImage": {
+			"type": "boolean",
+			"default": false
+		},
+		"imageSizeSlug": {
+			"type": "string",
+			"default": "large"
+		},
+		"displayAuthor": {
+			"type": "boolean",
+			"default": false
+		},
+		"selectedAuthor": {
+			"type": "number",
+			"default": 0
+		},
+		"displayDate": {
+			"type": "boolean",
+			"default": false
+		},
+		"dateFormat": {
+			"type": "string"
+		},
+		"orderSelect": {
+			"type": "string",
+			"default": "date/desc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"order": {
+			"type": "string",
+			"default": "DESC"
+		},
+		"selectedTerms": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			}
+		},
+		"taxQuery": {
+			"type": "array",
+			"items": {
+				"type": "object"
+			}
+		},
+		"postsToShow": {
+			"type": "number",
+			"default": 5
+		},
+		"displayLayout": {
+			"type": "string",
+			"default": "list"
+		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "custom-query",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
